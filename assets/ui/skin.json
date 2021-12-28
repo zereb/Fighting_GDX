@@ -1,0 +1,84 @@
+{
+BitmapFont: {
+	pixel: {
+		file: *.fnt
+	}
+	pixel16: {
+		file: pixle16.fnt
+	}
+}
+Color: {
+	RGBA_183_183_183_255: {
+		hex: b7b7b7ff
+	}
+	RGBA_36_38_177_255: {
+		hex: 000000ff
+	}
+}
+TintedDrawable: {
+	slot2_2: {
+		name: slot2
+		color: {
+			hex: 00f958ff
+		}
+	}
+}
+ImageButtonStyle: {
+	combat: {
+		imageUp: slot2
+		imageChecked: slot2_2
+	}
+	pause: {
+		imageUp: pause
+		pressedOffsetX: -3
+		pressedOffsetY: -3
+	}
+}
+LabelStyle: {
+	default: {
+		font: pixel
+	}
+}
+TextButtonStyle: {
+	default: {
+		font: pixel
+		checkedOffsetX: -2
+		checkedOffsetY: -2
+	}
+	elements: {
+		font: pixel
+		checkedFontColor: RGBA_183_183_183_255
+		up: stone_9
+		checked: stone_9
+		checkedOffsetX: -2
+		checkedOffsetY: -2
+	}
+	next_turn: {
+		font: pixel16
+		fontColor: RGBA_36_38_177_255
+		up: gold_9
+		pressedOffsetX: -2
+		pressedOffsetY: -2
+	}
+}
+TextFieldStyle: {
+	default: {
+		font: pixel
+		fontColor: RGBA_36_38_177_255
+		focusedFontColor: RGBA_183_183_183_255
+		background: stone_9
+	}
+}
+TextTooltipStyle: {
+	default: {
+		label: default
+	}
+}
+WindowStyle: {
+	default: {
+		background: window
+		titleFont: pixel
+		titleFontColor: RGBA_183_183_183_255
+	}
+}
+}
